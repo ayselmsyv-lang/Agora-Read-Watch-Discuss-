@@ -1,5 +1,9 @@
 # Agora-Read-Watch-Discuss
 It is community platform for interactive games and you can register for event and get your ticket beforehand. Discussions are mostly about the films and books. You debate, analyze and make friends via this platform
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d84f5843-ce78-4345-81b7-4e06119fb7b2" width="750">
+</p>
+
 
 ## Features
 - User registration/login
