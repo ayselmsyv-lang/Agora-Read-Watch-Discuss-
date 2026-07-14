@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guess the Title — Agora</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <a class="brand" href="index.html"><img src="assets/logo.png" alt="Agora logo"><span>AGORA</span></a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="debate.html">Debate</a>
+    <a href="dice.html">This or That</a>
+    <a href="titles.html">Titles</a>
+    <a href="recommend.html">Recommend</a>
+    <a href="register.html">Register</a>
+    <a href="tickets.html">Tickets</a>
+    <a href="guess.html" class="active">Guess</a>
+    <a href="bingo.html">Bingo</a>
+  </nav>
+</div>
+
+<div class="pagehead">
+  <div class="eyebrow">06 — Guess the Title</div>
+  <h1>Read the clue. Name the story.</h1>
+  <p>Every clue is three emoji standing in for a book or a film. Pick the right title from the options below.</p>
+</div>
+
+<section class="stall">
+  <div class="card guess-card">
+    <div class="guess-progress">
+      <span class="eyebrow" id="guessCount">Question 1 of 10</span>
+      <span class="score-pill" id="scorePill">0 / 0 correct</span>
+    </div>
+    <div class="eyebrow" id="guessType" style="margin-bottom:8px;">Film</div>
+    <div class="emoji-clue" id="emojiClue">🕷️🧑‍🎓🏙️</div>
+    <div class="option-grid" id="optionGrid"></div>
+    <div class="guess-foot">
+      <span class="guess-feedback" id="guessFeedback">Pick the title this emoji clue is hiding.</span>
+      <button class="btn" onclick="nextGuess()">Next clue →</button>
+    </div>
+  </div>
+</section>
+
+<footer>Agora — a template front end. Not connected to a server yet.</footer>
+<script src="script.js"></script>
+</body>
+</html>

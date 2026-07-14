@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tickets — Agora</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <a class="brand" href="index.html"><img src="assets/logo.png" alt="Agora logo"><span>AGORA</span></a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="debate.html">Debate</a>
+    <a href="dice.html">This or That</a>
+    <a href="titles.html">Titles</a>
+    <a href="recommend.html">Recommend</a>
+    <a href="register.html">Register</a>
+    <a href="tickets.html" class="active">Tickets</a>
+    <a href="guess.html">Guess</a>
+    <a href="bingo.html">Bingo</a>
+  </nav>
+</div>
+
+<div class="pagehead">
+  <div class="eyebrow">05 — Tickets</div>
+  <h1>Raise an issue.</h1>
+  <p>Open a ticket for a bug, a question, or a book/film you think Agora is missing.</p>
+</div>
+
+<section class="stall">
+  <div class="ticket-layout">
+    <form class="card" style="display:flex;flex-direction:column;gap:16px;" onsubmit="submitTicket(event)">
+      <div class="field">
+        <label for="tkSubject">Subject</label>
+        <input id="tkSubject" required placeholder="Missing a debate topic">
+      </div>
+      <div class="field">
+        <label for="tkCategory">Category</label>
+        <select id="tkCategory">
+          <option>Bug report</option>
+          <option>Content suggestion</option>
+          <option>Account issue</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="tkMessage">Message</label>
+        <textarea id="tkMessage" required placeholder="Tell us what's going on..."></textarea>
+      </div>
+      <button class="btn solid" type="submit" style="width:fit-content;">Submit ticket</button>
+    </form>
+    <div class="ticket-list" id="ticketList"></div>
+  </div>
+</section>
+
+<footer>Agora — a template front end. Not connected to a server yet.</footer>
+<script src="script.js"></script>
+</body>
+</html>

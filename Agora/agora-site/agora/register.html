@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register — Agora</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <a class="brand" href="index.html"><img src="assets/logo.png" alt="Agora logo"><span>AGORA</span></a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="debate.html">Debate</a>
+    <a href="dice.html">This or That</a>
+    <a href="titles.html">Titles</a>
+    <a href="recommend.html">Recommend</a>
+    <a href="register.html" class="active">Register</a>
+    <a href="tickets.html">Tickets</a>
+    <a href="guess.html">Guess</a>
+    <a href="bingo.html">Bingo</a>
+  </nav>
+</div>
+
+<div class="pagehead">
+  <div class="eyebrow">04 — Registration</div>
+  <h1>Become a citizen.</h1>
+  <p>Create an account to vote, save recommendations, and track your tickets.</p>
+</div>
+
+<section class="stall">
+  <form class="form-grid" id="registerForm" onsubmit="submitRegister(event)">
+    <div class="field">
+      <label for="regName">Full name</label>
+      <input id="regName" required placeholder="Ada Lovelace">
+    </div>
+    <div class="field">
+      <label for="regEmail">Email</label>
+      <input id="regEmail" type="email" required placeholder="ada@agora.io">
+    </div>
+    <div class="field">
+      <label for="regPass">Password</label>
+      <input id="regPass" type="password" required minlength="8" placeholder="At least 8 characters">
+    </div>
+    <div class="field">
+      <label for="regGenre">Favorite genre</label>
+      <select id="regGenre">
+        <option>Literary Fiction</option>
+        <option>Mystery & Thriller</option>
+        <option>Sci-Fi & Fantasy</option>
+        <option>Horror</option>
+        <option>Romance</option>
+        <option>Non-Fiction</option>
+      </select>
+    </div>
+    <div class="field full">
+      <button class="btn solid" type="submit" style="width:fit-content;">Register</button>
+    </div>
+  </form>
+  <div class="success" id="registerSuccess">
+    <h3>Welcome to the square.</h3>
+    <p id="successMsg">Your seat is reserved. You can now vote, roll, and open tickets.</p>
+  </div>
+</section>
+
+<footer>Agora — a template front end. Not connected to a server yet.</footer>
+<script src="script.js"></script>
+</body>
+</html>

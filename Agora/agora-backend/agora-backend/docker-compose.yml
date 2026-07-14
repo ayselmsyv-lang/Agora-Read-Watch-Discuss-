@@ -1,0 +1,15 @@
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: agora_user
+      POSTGRES_PASSWORD: agora_pass
+      POSTGRES_DB: agora_db
+    ports:
+      - "5434:5432"
+    volumes:
+      - agora_pg_data:/var/lib/postgresql/data
+
+volumes:
+  agora_pg_data:

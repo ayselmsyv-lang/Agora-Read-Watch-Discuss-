@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recommend — Agora</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <a class="brand" href="index.html"><img src="assets/logo.png" alt="Agora logo"><span>AGORA</span></a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="debate.html">Debate</a>
+    <a href="dice.html">This or That</a>
+    <a href="titles.html">Titles</a>
+    <a href="recommend.html" class="active">Recommend</a>
+    <a href="register.html">Register</a>
+    <a href="tickets.html">Tickets</a>
+    <a href="guess.html">Guess</a>
+    <a href="bingo.html">Bingo</a>
+  </nav>
+</div>
+
+<div class="pagehead">
+  <div class="eyebrow">03 — Recommendations</div>
+  <h1>Pick a genre. Get a pairing.</h1>
+  <p>Choose the genre you're in the mood for and Agora matches a book and a film from that world.</p>
+</div>
+
+<section class="stall">
+  <div class="card" style="max-width:760px;">
+    <div class="genre-grid" id="genreGrid"></div>
+    <div class="rec-actions">
+      <button class="btn solid" onclick="shufflePairing()">Shuffle another pairing ⟳</button>
+    </div>
+    <p class="rec-empty" id="recEmpty">Choose a genre above to see your first pairing.</p>
+    <div class="rec-result" id="recResult">
+      <div class="rec-item">
+        <span class="eyebrow" id="recGenre">Genre</span>
+        <h3 id="recBook">—</h3>
+        <p id="recBookNote">—</p>
+      </div>
+      <div class="rec-item">
+        <span class="eyebrow">Film</span>
+        <h3 id="recFilm">—</h3>
+        <p id="recFilmNote">—</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>Agora — a template front end. Not connected to a server yet.</footer>
+<script src="script.js"></script>
+</body>
+</html>

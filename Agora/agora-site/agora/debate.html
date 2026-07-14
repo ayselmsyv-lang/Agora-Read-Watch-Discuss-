@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Debate — Agora</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <a class="brand" href="index.html"><img src="assets/logo.png" alt="Agora logo"><span>AGORA</span></a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="debate.html" class="active">Debate</a>
+    <a href="dice.html">This or That</a>
+    <a href="titles.html">Titles</a>
+    <a href="recommend.html">Recommend</a>
+    <a href="register.html">Register</a>
+    <a href="tickets.html">Tickets</a>
+    <a href="guess.html">Guess</a>
+    <a href="bingo.html">Bingo</a>
+  </nav>
+</div>
+
+<div class="pagehead">
+  <div class="eyebrow">01 — Debate</div>
+  <h1>Take a side.</h1>
+  <p>One claim, two positions. Vote, watch the floor shift, move to the next one.</p>
+</div>
+
+<section class="stall">
+  <div class="card debate-card">
+    <div class="eyebrow" id="debateTag">Adaptations</div>
+    <div class="debate-q" id="debateQ">The movie adaptation can surpass the book.</div>
+    <div class="vote-row">
+      <button class="vote-btn agree" onclick="vote('agree')">Agree</button>
+      <button class="vote-btn disagree" onclick="vote('disagree')">Disagree</button>
+    </div>
+    <div class="bar-track"><div class="bar-agree" id="barAgree" style="width:50%"></div><div class="bar-disagree" id="barDisagree" style="width:50%"></div></div>
+    <div class="bar-meta"><span id="pctAgree">50% agree</span><span id="pctDisagree">50% disagree</span></div>
+    <div class="debate-foot">
+      <span class="tally" id="debateTally">0 votes cast</span>
+      <button class="btn" onclick="nextDebate()">Next question →</button>
+    </div>
+  </div>
+</section>
+
+<footer>Agora — a template front end. Not connected to a server yet.</footer>
+<script src="script.js"></script>
+</body>
+</html>

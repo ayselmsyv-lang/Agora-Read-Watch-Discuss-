@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book-to-Film Bingo — Agora</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <a class="brand" href="index.html"><img src="assets/logo.png" alt="Agora logo"><span>AGORA</span></a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="debate.html">Debate</a>
+    <a href="dice.html">This or That</a>
+    <a href="titles.html">Titles</a>
+    <a href="recommend.html">Recommend</a>
+    <a href="register.html">Register</a>
+    <a href="tickets.html">Tickets</a>
+    <a href="guess.html">Guess</a>
+    <a href="bingo.html" class="active">Bingo</a>
+  </nav>
+</div>
+
+<div class="pagehead">
+  <div class="eyebrow">07 — Book-to-Film Bingo</div>
+  <h1>Mark your way to a line.</h1>
+  <p>Tap a square whenever it's true for you. Five in a row — across, down, or diagonal — and you've got bingo.</p>
+</div>
+
+<section class="stall">
+  <div class="card bingo-wrap">
+    <div class="bingo-top">
+      <span class="bingo-banner" id="bingoBanner">Bingo! Five in a row.</span>
+      <button class="btn" onclick="resetBingo()">Reset card</button>
+    </div>
+    <div class="bingo-grid" id="bingoGrid"></div>
+  </div>
+</section>
+
+<footer>Agora — a template front end. Not connected to a server yet.</footer>
+<script src="script.js"></script>
+</body>
+</html>

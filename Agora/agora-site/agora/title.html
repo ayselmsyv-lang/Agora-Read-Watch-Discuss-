@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Title — Agora</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <a class="brand" href="index.html"><img src="assets/logo.png" alt="Agora logo"><span>AGORA</span></a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="debate.html">Debate</a>
+    <a href="dice.html">This or That</a>
+    <a href="titles.html" class="active">Titles</a>
+    <a href="recommend.html">Recommend</a>
+    <a href="register.html">Register</a>
+    <a href="tickets.html">Tickets</a>
+    <a href="guess.html">Guess</a>
+    <a href="bingo.html">Bingo</a>
+  </nav>
+</div>
+
+<div class="pagehead">
+  <a class="btn" href="titles.html" style="margin-bottom:20px;display:inline-flex;">← Back to titles</a>
+</div>
+
+<section class="stall" style="padding-top:0;">
+  <div class="title-detail" id="titleDetail">
+    <span class="eyebrow" id="titleType">Book</span>
+    <h1 id="titleName">—</h1>
+    <span class="genre-tag" id="titleGenre">—</span>
+    <p class="blurb" id="titleBlurb">—</p>
+
+    <div class="rating-summary">
+      <span class="stars" id="avgStars" style="font-size:22px;"></span>
+      <span class="avg" id="avgNum">—</span>
+      <span class="count" id="ratingCount">—</span>
+    </div>
+
+    <form class="feedback-form" id="feedbackForm" onsubmit="submitFeedback(event)">
+      <div class="eyebrow">Leave your rating</div>
+      <div class="star-input" id="starInput"></div>
+      <div class="field full" style="max-width:560px;">
+        <textarea id="feedbackText" placeholder="What did you think?"></textarea>
+      </div>
+      <div style="display:flex;align-items:center;gap:14px;margin-top:14px;flex-wrap:wrap;">
+        <button class="btn solid" type="submit">Submit feedback</button>
+        <span class="tally" id="feedbackHint">Pick a star rating, then submit.</span>
+      </div>
+    </form>
+
+    <div class="review-list" id="reviewList"></div>
+  </div>
+</section>
+
+<footer>Agora — a template front end. Not connected to a server yet.</footer>
+<script src="script.js"></script>
+</body>
+</html>

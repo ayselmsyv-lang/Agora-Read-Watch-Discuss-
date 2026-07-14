@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>This or That — Agora</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <a class="brand" href="index.html"><img src="assets/logo.png" alt="Agora logo"><span>AGORA</span></a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="debate.html">Debate</a>
+    <a href="dice.html" class="active">This or That</a>
+    <a href="titles.html">Titles</a>
+    <a href="recommend.html">Recommend</a>
+    <a href="register.html">Register</a>
+    <a href="tickets.html">Tickets</a>
+    <a href="guess.html">Guess</a>
+    <a href="bingo.html">Bingo</a>
+  </nav>
+</div>
+
+<div class="pagehead">
+  <div class="eyebrow">02 — This or That</div>
+  <h1>Roll for your dilemma.</h1>
+  <p>Throw the die to surface a new pairing, then pick your side.</p>
+</div>
+
+<section class="stall">
+  <div class="dice-zone">
+    <div class="dice" id="diceBtn" onclick="rollDice()" role="button" aria-label="Roll the die" tabindex="0">
+      <svg viewBox="0 0 24 24" id="diceFace">
+        <rect x="1" y="1" width="22" height="22" rx="4" fill="none" stroke="var(--gold-dark)"/>
+        <circle class="pip" cx="12" cy="12" r="2"/>
+      </svg>
+    </div>
+    <div class="tot-pair">
+      <div class="tot-option" id="totA" onclick="pickTot('a')">Read the book first</div>
+      <div class="tot-vs">OR</div>
+      <div class="tot-option" id="totB" onclick="pickTot('b')">Watch the movie first</div>
+    </div>
+    <div class="tot-result" id="totResult">Roll the die for a fresh pairing.</div>
+  </div>
+</section>
+
+<footer>Agora — a template front end. Not connected to a server yet.</footer>
+<script src="script.js"></script>
+</body>
+</html>
