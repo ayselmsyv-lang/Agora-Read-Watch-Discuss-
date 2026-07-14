@@ -20,12 +20,5 @@ It is community platform for interactive games and you can register for event an
 - JWT Authentication
 
 ## 🚧 Project Status: In Progress
-
-Current Features:
-- ✅ Authentication system
-- ✅ PostgreSQL database setup
-- ✅ Backend API structure
-- ✅ Docker configuration
-- ✅ Book/Movie discussion community concept
 - ⚠️ Frontend and backend integration is still in progress.
 - ⚠️ Some features are under development.
